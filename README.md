@@ -1,6 +1,8 @@
-ScreenOne – Consulta de Séries com API OMDb
+📺 ScreenOne – Consulta de Séries com Spring Boot
 
-Projeto desenvolvido para o Programa ONE – Oracle Next Education, focado em consumo de APIs, Java e Spring Boot.
+Este é um projeto desenvolvido no contexto do Programa ONE – Oracle Next Education, com o objetivo de praticar Java, consumo de APIs, deserialização JSON, boas práticas de organização de pacotes e a estrutura de um app com Spring Boot.
+
+O projeto realiza a consulta de dados de uma série usando a API OMDb (Open Movie Database) e converte a resposta JSON em uma classe Java tipada.
 
 <p align="center"> <img src="https://img.shields.io/badge/Java-17-orange?style=for-the-badge"/> <img src="https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?style=for-the-badge"/> <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-blueviolet?style=for-the-badge"/> <img src="https://img.shields.io/badge/ONE-Oracle%20Next%20Education-blue?style=for-the-badge"/> </p>
 📌 Sobre o Projeto
