@@ -1,26 +1,16 @@
 package com.br.com.alura.ScreenOne;
 
-import com.br.com.alura.ScreenOne.model.DadosSerie;
-import com.br.com.alura.ScreenOne.service.ConsumoAPI;
-import com.br.com.alura.ScreenOne.service.ConverteDados;
+import com.br.com.alura.ScreenOne.principal.Principal;
+import com.br.com.alura.ScreenOne.repository.SerieRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ScreenOneApplication implements CommandLineRunner {
-
+public class ScreenOneApplication{
 	public static void main(String[] args) {
 		SpringApplication.run(ScreenOneApplication.class, args);
 	}
 
-    @Override
-    public void run(String... args) throws Exception {
-        var consumoAPI = new ConsumoAPI();
-        var json = consumoAPI.obterDados("https://www.omdbapi.com/?i=gilmore+girls&apikey=42d9b0b7");
-        System.out.println(json);
-        ConverteDados conversor = new ConverteDados();
-        DadosSerie dados = conversor.obterDados(json, DadosSerie.class);
-        System.out.println(dados);
-    }
 }
